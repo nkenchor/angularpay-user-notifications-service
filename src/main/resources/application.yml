@@ -1,0 +1,34 @@
+server:
+  port: 20270
+
+spring:
+  application.name: notification-service
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: angularpay
+      username: service_account
+      password: service_account_password
+      authentication-database: angularpay
+
+angularpay:
+  pageSize: 50
+  codecSizeInMB: 50
+  twilio:
+    accountSid: AC22360387df8c9134769d3672f0a1be4a
+    authToken: 1ec54ae3ef60ceec2c67d0ef0587a53e
+    from: +12055741473
+    sendGridApiKey: SENDGRID_API_KEY
+  smtp:
+    host: smtp.gmail.com
+    port: 465
+    ssl: true
+    auth: true
+    username: angularpay.notifications@gmail.com
+    password: 1qaz@WSX#EDC
+  redis:
+    host: localhost
+    port: 6379
+    timeout: 10000
+
